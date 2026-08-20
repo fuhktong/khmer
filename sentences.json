@@ -1,69 +1,688 @@
 [
   {
-    "id": 1, "level": 1,
+    "id": 1,
+    "level": 1,
     "english": "I eat rice.",
-    "khmer": ["knyom", "nyam", "bay"],
+    "khmer": [
+      "knyom",
+      "nyam",
+      "bay"
+    ],
     "alsoAccept": []
   },
   {
-    "id": 2, "level": 1,
+    "id": 2,
+    "level": 1,
     "english": "I go to the market.",
-    "khmer": ["knyom", "dtow", "psa"],
+    "khmer": [
+      "knyom",
+      "dtow",
+      "psa"
+    ],
     "alsoAccept": []
   },
   {
-    "id": 3, "level": 1,
+    "id": 3,
+    "level": 1,
     "english": "You drink water.",
-    "khmer": ["neak", "pak", "dtuk"],
+    "khmer": [
+      "neak",
+      "pak",
+      "dtuk"
+    ],
     "alsoAccept": []
   },
   {
-    "id": 4, "level": 1,
+    "id": 4,
+    "level": 1,
     "english": "The house is big.",
-    "khmer": ["pteah", "tom"],
+    "khmer": [
+      "pteah",
+      "tom"
+    ],
     "alsoAccept": [],
     "note": "No verb 'to be' before adjectives in Khmer."
   },
   {
-    "id": 5, "level": 2,
+    "id": 5,
+    "level": 2,
     "english": "I don't eat fish.",
-    "khmer": ["knyom", "min", "nyam", "dtrey", "dtay"],
+    "khmer": [
+      "knyom",
+      "min",
+      "nyam",
+      "dtrey",
+      "dtay"
+    ],
     "alsoAccept": [],
     "note": "Negation wraps the verb: min ... dtay."
   },
   {
-    "id": 6, "level": 2,
+    "id": 6,
+    "level": 2,
     "english": "I will go to school tomorrow.",
-    "khmer": ["knyom", "nung", "dtow", "sala-rean", "sa-aik"],
-    "alsoAccept": [["sa-aik", "knyom", "nung", "dtow", "sala-rean"]],
+    "khmer": [
+      "knyom",
+      "nung",
+      "dtow",
+      "sala-rean",
+      "sa-aik"
+    ],
+    "alsoAccept": [
+      [
+        "sa-aik",
+        "knyom",
+        "nung",
+        "dtow",
+        "sala-rean"
+      ]
+    ],
     "note": "Time words can lead the sentence or trail it."
   },
   {
-    "id": 7, "level": 2,
+    "id": 7,
+    "level": 2,
     "english": "Where are you going?",
-    "khmer": ["neak", "dtow", "ei-na"],
+    "khmer": [
+      "neak",
+      "dtow",
+      "ei-na"
+    ],
     "alsoAccept": [],
     "note": "Question words stay in place; no fronting like English."
   },
   {
-    "id": 8, "level": 2,
+    "id": 8,
+    "level": 2,
     "english": "Do you have money?",
-    "khmer": ["neak", "mean", "luy", "dtay"],
+    "khmer": [
+      "neak",
+      "mean",
+      "luy",
+      "dtay"
+    ],
     "alsoAccept": [],
     "note": "Yes/no questions end in the particle dtay."
   },
   {
-    "id": 9, "level": 3,
+    "id": 9,
+    "level": 3,
     "english": "I want to eat delicious food.",
-    "khmer": ["knyom", "jong", "nyam", "m'howb", "chnganh"],
+    "khmer": [
+      "knyom",
+      "jong",
+      "nyam",
+      "m'howb",
+      "chnganh"
+    ],
     "alsoAccept": [],
     "note": "Adjective follows its noun: m'howb chnganh."
   },
   {
-    "id": 10, "level": 3,
+    "id": 10,
+    "level": 3,
     "english": "Today I go to the market with my friend.",
-    "khmer": ["t'ngai-nih", "knyom", "dtow", "psa", "jea-moy", "met-peak", "knyom"],
-    "alsoAccept": [["knyom", "dtow", "psa", "jea-moy", "met-peak", "knyom", "t'ngai-nih"]],
+    "khmer": [
+      "t'ngai-nih",
+      "knyom",
+      "dtow",
+      "psa",
+      "jea-moy",
+      "met-peak",
+      "knyom"
+    ],
+    "alsoAccept": [
+      [
+        "knyom",
+        "dtow",
+        "psa",
+        "jea-moy",
+        "met-peak",
+        "knyom",
+        "t'ngai-nih"
+      ]
+    ],
     "note": "Possession is postposed: met-peak knyom = friend-my."
+  },
+  {
+    "id": 11,
+    "level": 1,
+    "english": "I drink coffee.",
+    "khmer": [
+      "knyom",
+      "pak",
+      "cafe"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 12,
+    "level": 1,
+    "english": "He eats fish.",
+    "khmer": [
+      "goad",
+      "nyam",
+      "dtrey"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 13,
+    "level": 1,
+    "english": "She reads a book.",
+    "khmer": [
+      "neang",
+      "aan",
+      "seew-pow"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 14,
+    "level": 1,
+    "english": "We go to school.",
+    "khmer": [
+      "bpouk-yerng",
+      "dtow",
+      "sala-rean"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 15,
+    "level": 1,
+    "english": "The food is delicious.",
+    "khmer": [
+      "m'howb",
+      "chnganh"
+    ],
+    "alsoAccept": [],
+    "note": "No verb 'to be' before an adjective."
+  },
+  {
+    "id": 16,
+    "level": 1,
+    "english": "The car is new.",
+    "khmer": [
+      "lan",
+      "tmey"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 17,
+    "level": 1,
+    "english": "The house is far.",
+    "khmer": [
+      "pteah",
+      "ch'ngay"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 18,
+    "level": 1,
+    "english": "I love my mother.",
+    "khmer": [
+      "knyom",
+      "srolanh",
+      "mak",
+      "knyom"
+    ],
+    "alsoAccept": [],
+    "note": "Possession follows the noun: mak knyom = mother-my."
+  },
+  {
+    "id": 19,
+    "level": 1,
+    "english": "You buy vegetables.",
+    "khmer": [
+      "neak",
+      "dtinh",
+      "bon-lae"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 20,
+    "level": 1,
+    "english": "The dog is small.",
+    "khmer": [
+      "chhke",
+      "dtooj"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 21,
+    "level": 1,
+    "english": "I am hungry.",
+    "khmer": [
+      "knyom",
+      "klean"
+    ],
+    "alsoAccept": [],
+    "note": "klean is 'hungry' on its own — no verb needed."
+  },
+  {
+    "id": 22,
+    "level": 1,
+    "english": "They work.",
+    "khmer": [
+      "bpouk-gay",
+      "twer-ga"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 23,
+    "level": 1,
+    "english": "The water is cold.",
+    "khmer": [
+      "dtuk",
+      "dtro-jeak"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 24,
+    "level": 1,
+    "english": "I see the cat.",
+    "khmer": [
+      "knyom",
+      "kheunh",
+      "chma"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 25,
+    "level": 2,
+    "english": "I don't drink beer.",
+    "khmer": [
+      "knyom",
+      "min",
+      "pak",
+      "bi-yea",
+      "dtay"
+    ],
+    "alsoAccept": [],
+    "note": "Negation wraps the verb: min ... dtay."
+  },
+  {
+    "id": 26,
+    "level": 2,
+    "english": "She doesn't have money.",
+    "khmer": [
+      "neang",
+      "min",
+      "mean",
+      "luy",
+      "dtay"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 27,
+    "level": 2,
+    "english": "Do you eat meat?",
+    "khmer": [
+      "neak",
+      "nyam",
+      "saj",
+      "dtay"
+    ],
+    "alsoAccept": [],
+    "note": "A yes/no question is the statement plus dtay."
+  },
+  {
+    "id": 28,
+    "level": 2,
+    "english": "Where is my bag?",
+    "khmer": [
+      "gaa-bou",
+      "knyom",
+      "nau",
+      "ei-na"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 29,
+    "level": 2,
+    "english": "What do you want?",
+    "khmer": [
+      "neak",
+      "jong",
+      "ey"
+    ],
+    "alsoAccept": [],
+    "note": "Question words stay where the answer goes — no fronting."
+  },
+  {
+    "id": 30,
+    "level": 2,
+    "english": "Who eats rice?",
+    "khmer": [
+      "nak-na",
+      "nyam",
+      "bay"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 31,
+    "level": 2,
+    "english": "I went to the market yesterday.",
+    "khmer": [
+      "m'serl-menh",
+      "knyom",
+      "ban",
+      "dtow",
+      "psa"
+    ],
+    "alsoAccept": [
+      [
+        "knyom",
+        "ban",
+        "dtow",
+        "psa",
+        "m'serl-menh"
+      ]
+    ],
+    "note": "ban marks the past. The time word can lead or trail."
+  },
+  {
+    "id": 32,
+    "level": 2,
+    "english": "He will come tomorrow.",
+    "khmer": [
+      "sa-aik",
+      "goad",
+      "nung",
+      "mok"
+    ],
+    "alsoAccept": [
+      [
+        "goad",
+        "nung",
+        "mok",
+        "sa-aik"
+      ]
+    ],
+    "note": "nung marks the future."
+  },
+  {
+    "id": 33,
+    "level": 2,
+    "english": "I don't understand.",
+    "khmer": [
+      "knyom",
+      "min",
+      "yol",
+      "dtay"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 34,
+    "level": 2,
+    "english": "Why are you tired?",
+    "khmer": [
+      "het-avey",
+      "neak",
+      "oh-gom-lang"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 35,
+    "level": 2,
+    "english": "How much is this shirt?",
+    "khmer": [
+      "aow",
+      "nih",
+      "tlai",
+      "bpon-man"
+    ],
+    "alsoAccept": [],
+    "note": "Literally: shirt this expensive how-much."
+  },
+  {
+    "id": 36,
+    "level": 2,
+    "english": "When do you go to work?",
+    "khmer": [
+      "neak",
+      "dtow",
+      "twer-ga",
+      "bpayl-na"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 37,
+    "level": 2,
+    "english": "I can cook.",
+    "khmer": [
+      "knyom",
+      "aaj",
+      "twer-m'hop",
+      "ban"
+    ],
+    "alsoAccept": [],
+    "note": "aaj ... ban wraps the verb, like min ... dtay."
+  },
+  {
+    "id": 38,
+    "level": 2,
+    "english": "The room is not clean.",
+    "khmer": [
+      "bon-dtob",
+      "min",
+      "som-aat",
+      "dtay"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 39,
+    "level": 3,
+    "english": "I want to buy a new shirt.",
+    "khmer": [
+      "knyom",
+      "jong",
+      "dtinh",
+      "aow",
+      "tmey"
+    ],
+    "alsoAccept": [],
+    "note": "Adjective follows its noun: aow tmey."
+  },
+  {
+    "id": 40,
+    "level": 3,
+    "english": "Today my friend goes to the hospital.",
+    "khmer": [
+      "t'ngai-nih",
+      "met-peak",
+      "knyom",
+      "dtow",
+      "mon-dtee-bpaid"
+    ],
+    "alsoAccept": [
+      [
+        "met-peak",
+        "knyom",
+        "dtow",
+        "mon-dtee-bpaid",
+        "t'ngai-nih"
+      ]
+    ]
+  },
+  {
+    "id": 41,
+    "level": 3,
+    "english": "I don't want to eat fish today.",
+    "khmer": [
+      "t'ngai-nih",
+      "knyom",
+      "min",
+      "jong",
+      "nyam",
+      "dtrey",
+      "dtay"
+    ],
+    "alsoAccept": [
+      [
+        "knyom",
+        "min",
+        "jong",
+        "nyam",
+        "dtrey",
+        "dtay",
+        "t'ngai-nih"
+      ]
+    ],
+    "note": "dtay closes the negation at the end of the clause."
+  },
+  {
+    "id": 42,
+    "level": 3,
+    "english": "She will come to my house tomorrow.",
+    "khmer": [
+      "sa-aik",
+      "neang",
+      "nung",
+      "mok",
+      "pteah",
+      "knyom"
+    ],
+    "alsoAccept": [
+      [
+        "neang",
+        "nung",
+        "mok",
+        "pteah",
+        "knyom",
+        "sa-aik"
+      ]
+    ]
+  },
+  {
+    "id": 43,
+    "level": 3,
+    "english": "The food at this restaurant is delicious.",
+    "khmer": [
+      "m'howb",
+      "nau",
+      "haang-bay",
+      "nih",
+      "chnganh"
+    ],
+    "alsoAccept": [],
+    "note": "nih attaches to the noun it points at: haang-bay nih = restaurant this."
+  },
+  {
+    "id": 44,
+    "level": 3,
+    "english": "I don't go to work because I am sick.",
+    "khmer": [
+      "knyom",
+      "min",
+      "dtow",
+      "twer-ga",
+      "dtay",
+      "bpee-bprooah",
+      "knyom",
+      "cheu"
+    ],
+    "alsoAccept": [],
+    "note": "The negation closes with dtay before the because-clause starts."
+  },
+  {
+    "id": 45,
+    "level": 3,
+    "english": "My mother cooks delicious food every day.",
+    "khmer": [
+      "mak",
+      "knyom",
+      "twer-m'hop",
+      "m'howb",
+      "chnganh",
+      "roal",
+      "t'ngai"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 46,
+    "level": 3,
+    "english": "I will wait for you at the market.",
+    "khmer": [
+      "knyom",
+      "nung",
+      "jam",
+      "neak",
+      "nau",
+      "psa"
+    ],
+    "alsoAccept": [],
+    "note": "nau marks location: nau psa = at the market."
+  },
+  {
+    "id": 47,
+    "level": 3,
+    "english": "He has many friends.",
+    "khmer": [
+      "goad",
+      "mean",
+      "met-peak",
+      "jraurn"
+    ],
+    "alsoAccept": [],
+    "note": "jraurn follows the noun, like an adjective."
+  },
+  {
+    "id": 48,
+    "level": 3,
+    "english": "If you are tired, you must sleep.",
+    "khmer": [
+      "baur",
+      "neak",
+      "oh-gom-lang",
+      "neak",
+      "dtrow",
+      "gayng"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 49,
+    "level": 3,
+    "english": "I forgot my phone at home.",
+    "khmer": [
+      "knyom",
+      "ban",
+      "plej",
+      "dtoo-ra-sab",
+      "knyom",
+      "nau",
+      "pteah"
+    ],
+    "alsoAccept": []
+  },
+  {
+    "id": 50,
+    "level": 3,
+    "english": "The teacher gives a book to the student.",
+    "khmer": [
+      "groo-bong-rean",
+      "aowee",
+      "seew-pow",
+      "dtow",
+      "suh"
+    ],
+    "alsoAccept": []
   }
 ]

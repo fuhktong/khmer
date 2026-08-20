@@ -146,6 +146,11 @@
     "khmerScript": "អាក្រក់"
   },
   {
+    "english": "bag",
+    "khmer": "gaa-bou",
+    "khmerScript": "កាបូប"
+  },
+  {
     "english": "banana",
     "khmer": "plae jayk",
     "khmerScript": "ចេក"
@@ -360,6 +365,11 @@
   {
     "english": "carrot",
     "khmer": "ga-rot"
+  },
+  {
+    "english": "cat",
+    "khmer": "chma",
+    "khmerScript": "ឆ្មា"
   },
   {
     "english": "cauliflower",
@@ -676,6 +686,11 @@
     "english": "for (intended for)",
     "khmer": "som-rab",
     "khmerScript": "សម្រាប់"
+  },
+  {
+    "english": "forget",
+    "khmer": "plej",
+    "khmerScript": "ភ្លេច"
   },
   {
     "english": "forty",
@@ -1548,6 +1563,11 @@
     "khmer": "ro-bay-ga"
   },
   {
+    "english": "restaurant",
+    "khmer": "haang-bay",
+    "khmerScript": "ហាងបាយ"
+  },
+  {
     "english": "review",
     "khmer": "rom-luek"
   },
@@ -1609,6 +1629,11 @@
   {
     "english": "seafood",
     "khmer": "groeung-samot"
+  },
+  {
+    "english": "see",
+    "khmer": "kheunh",
+    "khmerScript": "ឃើញ"
   },
   {
     "english": "sell",
@@ -2117,6 +2142,11 @@
     "variants": [
       "smak-jet"
     ]
+  },
+  {
+    "english": "wait",
+    "khmer": "jam",
+    "khmerScript": "ចាំ"
   },
   {
     "english": "wake up",

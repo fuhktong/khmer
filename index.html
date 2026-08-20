@@ -138,7 +138,7 @@ const $  = (s,r=document)=>r.querySelector(s);
 const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
 
 let SENTENCES=[], idx=0, tiles=[], verdictState=null;
-let blurOn = localStorage.getItem('khmer-blur')==='1';
+let blurOn = localStorage.getItem('khmer-blur') !== '0';   // default: blurred
 
 // ---------- load ----------
 async function boot(){
