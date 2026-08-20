@@ -4,3 +4,5 @@
 # backups / OS cruft
 *.bak
 .DS_Store
+
+deploy.txt

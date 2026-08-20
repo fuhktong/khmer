@@ -24,13 +24,13 @@ A local server is required — browsers block `fetch` on `file://`, so opening
 | File | Purpose |
 | --- | --- |
 | `index.html` | The game. Self-contained: no build step, no dependencies. |
-| `sentences.json` | The sentence bank. Graded into three levels. |
-| `khmerwords.json` | Vocabulary lexicon, ~500 entries. |
+| `data/sentences.json` | The sentence bank. Graded into three levels. |
+| `data/khmerwords.json` | Vocabulary lexicon, ~500 entries. |
 | `khmer-worksheet.md`, `khmer-worksheets/` | Earlier printable-worksheet generator. |
 
 ## Adding sentences
 
-Append to `sentences.json`:
+Append to `data/sentences.json`:
 
 ```json
 {

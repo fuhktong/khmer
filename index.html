@@ -143,12 +143,12 @@ let blurOn = localStorage.getItem('khmer-blur') !== '0';   // default: blurred
 // ---------- load ----------
 async function boot(){
   try{
-    const res = await fetch('sentences.json',{cache:'no-store'});
+    const res = await fetch('data/sentences.json',{cache:'no-store'});
     if(!res.ok) throw new Error('HTTP '+res.status);
     SENTENCES = await res.json();
   }catch(e){
     $('#app').innerHTML =
-      '<div class="err"><strong>Could not load sentences.json</strong><br><br>'+
+      '<div class="err"><strong>Could not load data/sentences.json</strong><br><br>'+
       'Browsers block file reads when a page is opened directly from disk. '+
       'Start a local server in this folder, then reload:<br><br>'+
       '<code>python3 -m http.server 8000</code><br><br>'+
@@ -156,7 +156,7 @@ async function boot(){
       '<span style="opacity:.75">('+e.message+')</span></div>';
     return;
   }
-  if(!SENTENCES.length){ $('#app').innerHTML='<div class="err">sentences.json is empty.</div>'; return; }
+  if(!SENTENCES.length){ $('#app').innerHTML='<div class="err">data/sentences.json is empty.</div>'; return; }
   render(); load(0);
 }
 
