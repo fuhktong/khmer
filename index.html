@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Khmer Sentence Builder</title>
+<style>
+  :root{
+    --bg:#f6f5f2; --panel:#fff; --ink:#1c1b19; --muted:#6b6862;
+    --line:#e2ded6; --tile:#fff; --tile-line:#cfc9bd; --tile-ink:#1c1b19;
+    --accent:#1f6f5c; --accent-ink:#fff;
+    --ok:#1f7a45; --ok-bg:#e6f4ec; --bad:#b3261e; --bad-bg:#fbeae9;
+    --slot:#efece6; --shadow:0 1px 2px rgba(0,0,0,.08),0 6px 16px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#16181a; --panel:#1e2124; --ink:#eceae6; --muted:#9a978f;
+      --line:#2e3236; --tile:#282c30; --tile-line:#3d4247; --tile-ink:#eceae6;
+      --accent:#4fb79a; --accent-ink:#0d1210;
+      --ok:#63c98d; --ok-bg:#17301f; --bad:#f2837a; --bad-bg:#331a18;
+      --slot:#191c1f; --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#16181a; --panel:#1e2124; --ink:#eceae6; --muted:#9a978f;
+    --line:#2e3236; --tile:#282c30; --tile-line:#3d4247; --tile-ink:#eceae6;
+    --accent:#4fb79a; --accent-ink:#0d1210;
+    --ok:#63c98d; --ok-bg:#17301f; --bad:#f2837a; --bad-bg:#331a18;
+    --slot:#191c1f; --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.3);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:16px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-text-size-adjust:100%; touch-action:manipulation;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:20px 16px 40px}
+  header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  h1{font-size:19px;margin:0;letter-spacing:-.01em;font-weight:650}
+  .meta{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .badge{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--slot);
+    border:1px solid var(--line);font-size:12px;color:var(--muted);margin-left:6px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:18px;box-shadow:var(--shadow);margin-bottom:16px}
+
+  /* blur toggle */
+  .toolbar{display:flex;justify-content:flex-end;margin-bottom:10px}
+  .toggle{display:inline-flex;align-items:center;gap:9px;cursor:pointer;
+    font-size:13.5px;color:var(--muted);user-select:none;-webkit-user-select:none}
+  .toggle input{position:absolute;opacity:0;width:0;height:0}
+  .track{width:38px;height:22px;border-radius:999px;background:var(--slot);
+    border:1px solid var(--line);position:relative;transition:background .18s,border-color .18s;flex:0 0 auto}
+  .knob{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;
+    background:var(--muted);transition:transform .18s,background .18s}
+  .toggle input:checked + .track{background:var(--accent);border-color:transparent}
+  .toggle input:checked + .track .knob{transform:translateX(16px);background:#fff}
+  .toggle input:focus-visible + .track{outline:2px solid var(--accent);outline-offset:2px}
+
+  .prompt-label{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:6px}
+  .prompt-box{position:relative}
+  .prompt{font-size:22px;font-weight:600;line-height:1.35;letter-spacing:-.01em;
+    transition:filter .22s ease; display:inline-block}
+  .prompt.blurred{filter:blur(9px);cursor:pointer;user-select:none;-webkit-user-select:none}
+  .reveal{margin-top:9px;font-size:13px;color:var(--muted);cursor:pointer;
+    display:inline-flex;align-items:center;gap:6px;user-select:none}
+  .reveal:hover{color:var(--accent)}
+  .reveal svg{width:15px;height:15px;flex:0 0 auto}
+
+  .zone-label{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:0 0 8px}
+  .zone{
+    display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;
+    min-height:76px;padding:12px;border-radius:12px;background:var(--slot);
+    border:1.5px dashed var(--line);transition:border-color .15s,background .15s;
+  }
+  .zone.answer{min-height:88px}
+  .zone.over{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,var(--slot))}
+  .zone.correct{border-style:solid;border-color:var(--ok);background:var(--ok-bg)}
+  .zone.wrong{border-style:solid;border-color:var(--bad);background:var(--bad-bg)}
+  .empty-hint{color:var(--muted);font-size:14px;font-style:italic;align-self:center;padding:6px 2px;user-select:none}
+  .tile{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:11px 15px;border-radius:9px;background:var(--tile);color:var(--tile-ink);
+    border:1px solid var(--tile-line);box-shadow:0 1px 1px rgba(0,0,0,.05);
+    font-size:17px;font-weight:550;cursor:grab;user-select:none;-webkit-user-select:none;
+    touch-action:none; white-space:nowrap; transition:opacity .12s;
+  }
+  .tile:active{cursor:grabbing}
+  .tile.ghosted{opacity:.3}
+  .tile.dragging{position:fixed;z-index:99;pointer-events:none;cursor:grabbing;
+    box-shadow:0 8px 24px rgba(0,0,0,.22);transform:scale(1.06);opacity:.96;margin:0}
+  .gap{width:3px;height:42px;border-radius:2px;background:var(--accent);opacity:.85;
+    align-self:center;flex:0 0 auto}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:4px}
+  button{
+    font:inherit;font-weight:600;font-size:15px;padding:11px 18px;border-radius:10px;
+    border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;
+    transition:background .12s,opacity .12s;
+  }
+  button:hover:not(:disabled){background:var(--slot)}
+  button.primary{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+  button.primary:hover:not(:disabled){opacity:.9;background:var(--accent)}
+  button:disabled{opacity:.42;cursor:not-allowed}
+  .verdict{display:flex;align-items:center;gap:9px;font-weight:650;font-size:16px;min-height:26px;margin-top:14px}
+  .verdict.ok{color:var(--ok)} .verdict.bad{color:var(--bad)}
+  .mark{width:26px;height:26px;flex:0 0 auto}
+  .note{margin-top:9px;font-size:14px;color:var(--muted);line-height:1.5;
+    border-left:2px solid var(--line);padding-left:11px}
+  .err{padding:20px;border-radius:12px;background:var(--bad-bg);color:var(--bad);
+    border:1px solid var(--bad);font-size:15px;line-height:1.6}
+  .err code{background:rgba(0,0,0,.10);padding:2px 6px;border-radius:4px;
+    font:14px ui-monospace,SFMono-Regular,Menlo,monospace;display:inline-block}
+  @media (max-width:480px){
+    .wrap{padding:14px 12px 32px}
+    .prompt{font-size:19px} .tile{font-size:16px;padding:10px 13px}
+    .controls button{flex:1 1 auto;min-width:120px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Khmer Sentence Builder</h1>
+    <div class="meta" id="meta"></div>
+  </header>
+  <div class="toolbar">
+    <label class="toggle">
+      <input type="checkbox" id="blurToggle">
+      <span class="track"><span class="knob"></span></span>
+      Blur English
+    </label>
+  </div>
+  <div id="app"></div>
+</div>
+
+<script>
+const $  = (s,r=document)=>r.querySelector(s);
+const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+
+let SENTENCES=[], idx=0, tiles=[], verdictState=null;
+let blurOn = localStorage.getItem('khmer-blur')==='1';
+
+// ---------- load ----------
+async function boot(){
+  try{
+    const res = await fetch('sentences.json',{cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    SENTENCES = await res.json();
+  }catch(e){
+    $('#app').innerHTML =
+      '<div class="err"><strong>Could not load sentences.json</strong><br><br>'+
+      'Browsers block file reads when a page is opened directly from disk. '+
+      'Start a local server in this folder, then reload:<br><br>'+
+      '<code>python3 -m http.server 8000</code><br><br>'+
+      'and open <code>http://localhost:8000</code><br><br>'+
+      '<span style="opacity:.75">('+e.message+')</span></div>';
+    return;
+  }
+  if(!SENTENCES.length){ $('#app').innerHTML='<div class="err">sentences.json is empty.</div>'; return; }
+  render(); load(0);
+}
+
+function render(){
+  $('#app').innerHTML = `
+    <div class="card">
+      <div class="prompt-label">Build this sentence in Khmer</div>
+      <div class="prompt-box">
+        <div class="prompt" id="prompt"></div>
+        <div class="reveal" id="reveal" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+          </svg>Reveal English
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="zone-label">Your sentence</div>
+      <div class="zone answer" id="answer"></div>
+      <div class="zone-label" style="margin-top:16px">Word bank</div>
+      <div class="zone bank" id="bank"></div>
+      <div class="verdict" id="verdict"></div>
+      <div id="note"></div>
+    </div>
+    <div class="controls">
+      <button class="primary" id="check" disabled>Check sentence</button>
+      <button id="reset">Reset</button>
+      <button id="next">Next sentence &rarr;</button>
+    </div>`;
+  $('#check').onclick = check;
+  $('#reset').onclick = ()=>load(idx);
+  $('#next').onclick  = ()=>load((idx+1)%SENTENCES.length);
+  $('#prompt').onclick = revealEnglish;
+  $('#reveal').onclick = revealEnglish;
+}
+
+// ---------- blur ----------
+function applyBlur(on){
+  const p=$('#prompt'), r=$('#reveal');
+  if(!p) return;
+  p.classList.toggle('blurred',on);
+  r.hidden = !on;
+}
+function revealEnglish(){ if(blurOn) applyBlur(false); }
+
+$('#blurToggle').checked = blurOn;
+$('#blurToggle').addEventListener('change',e=>{
+  blurOn = e.target.checked;
+  localStorage.setItem('khmer-blur', blurOn?'1':'0');
+  applyBlur(blurOn);
+});
+
+// ---------- sentence lifecycle ----------
+function load(i){
+  cancelDrag();
+  idx=i; verdictState=null;
+  const s=SENTENCES[i];
+  let order;
+  do{ order = s.khmer.map((t,n)=>n).sort(()=>Math.random()-0.5); }
+  while(s.khmer.length>1 && order.every((v,n)=>v===n));
+  tiles = order.map((srcIdx,n)=>({uid:'t'+n, text:s.khmer[srcIdx], where:'bank'}));
+  $('#prompt').textContent = s.english;
+  $('#meta').innerHTML = `Sentence ${i+1} of ${SENTENCES.length}<span class="badge">Level ${s.level}</span>`;
+  $('#note').innerHTML=''; $('#verdict').className='verdict'; $('#verdict').innerHTML='';
+  applyBlur(blurOn);
+  paint();
+}
+
+function paint(){
+  sweepGhosts();
+  const bank=$('#bank'), ans=$('#answer');
+  bank.innerHTML=''; ans.innerHTML='';
+  const inBank=tiles.filter(t=>t.where==='bank');
+  const inAns =tiles.filter(t=>t.where==='answer');
+  if(!inBank.length) bank.appendChild(hint('All words used — check your sentence'));
+  if(!inAns.length)  ans.appendChild(hint('Drag or tap words here'));
+  inBank.forEach(t=>bank.appendChild(tileEl(t)));
+  inAns.forEach(t=>ans.appendChild(tileEl(t)));
+  $('#check').disabled = inBank.length>0 || !inAns.length;
+  ans.classList.toggle('correct',verdictState==='ok');
+  ans.classList.toggle('wrong', verdictState==='bad');
+}
+function hint(t){ const d=document.createElement('div'); d.className='empty-hint'; d.textContent=t; return d; }
+function tileEl(t){
+  const el=document.createElement('div');
+  el.className='tile'; el.textContent=t.text; el.dataset.uid=t.uid;
+  el.addEventListener('pointerdown', e=>startDrag(e,t));
+  return el;
+}
+
+/* ---------- drag ----------------------------------------------------------
+   Listeners live on window, never on the tile: paint() destroys and rebuilds
+   tile elements, so an element-bound listener dies mid-drag and pointerup is
+   never delivered, orphaning the fixed-position ghost. Tiles are tracked by
+   uid rather than by DOM reference for the same reason. Every entry point
+   sweeps stray ghosts so a missed pointerup can never strand one on screen.
+-------------------------------------------------------------------------- */
+let drag=null;   // {uid,ghost,dx,dy,w,h,x0,y0,moved,pid}
+
+function sweepGhosts(){
+  $$('.tile.dragging').forEach(g=>g.remove());
+  $$('.tile.ghosted').forEach(el=>el.classList.remove('ghosted'));
+}
+function elFor(uid){ return $('.tile[data-uid="'+uid+'"]'); }
+
+function startDrag(e,t){
+  if(e.button===1||e.button===2) return;
+  if(drag) cancelDrag();
+  e.preventDefault();
+  const el=elFor(t.uid); if(!el) return;
+  const r=el.getBoundingClientRect();
+  drag={uid:t.uid, ghost:null, dx:e.clientX-r.left, dy:e.clientY-r.top,
+        w:r.width, h:r.height, x0:e.clientX, y0:e.clientY, moved:false, pid:e.pointerId};
+  window.addEventListener('pointermove',onMove,{passive:false});
+  window.addEventListener('pointerup',onUp);
+  window.addEventListener('pointercancel',onUp);
+}
+
+function detach(){
+  window.removeEventListener('pointermove',onMove);
+  window.removeEventListener('pointerup',onUp);
+  window.removeEventListener('pointercancel',onUp);
+}
+
+function onMove(e){
+  if(!drag || e.pointerId!==drag.pid) return;
+  e.preventDefault();
+  if(!drag.moved){
+    if(Math.hypot(e.clientX-drag.x0, e.clientY-drag.y0) < 6) return;   // still a tap
+    const src=elFor(drag.uid); if(!src) return cancelDrag();
+    drag.moved=true;
+    const g=src.cloneNode(true);
+    g.className='tile dragging';
+    g.style.width=drag.w+'px'; g.style.height=drag.h+'px';
+    document.body.appendChild(g);
+    drag.ghost=g;
+    src.classList.add('ghosted');
+  }
+  drag.ghost.style.left=(e.clientX-drag.dx)+'px';
+  drag.ghost.style.top =(e.clientY-drag.dy)+'px';
+  showTarget(e.clientX,e.clientY);
+}
+
+function onUp(e){
+  if(!drag || e.pointerId!==drag.pid) return;
+  const d=drag, t=tiles.find(x=>x.uid===d.uid);
+  drag=null; detach(); clearTarget(); sweepGhosts();
+  if(!t){ paint(); return; }
+  if(!d.moved){
+    moveTile(t, t.where==='bank'?'answer':'bank', null);       // tap
+  }else{
+    const r=$('#answer').getBoundingClientRect();
+    const into = e.clientX>=r.left && e.clientX<=r.right && e.clientY>=r.top && e.clientY<=r.bottom;
+    moveTile(t, into?'answer':'bank', into?insertionIndex(e.clientX,e.clientY,t.uid):null);
+  }
+}
+
+function cancelDrag(){ if(!drag) return; drag=null; detach(); clearTarget(); sweepGhosts(); paint(); }
+window.addEventListener('blur',cancelDrag);
+document.addEventListener('visibilitychange',()=>{ if(document.hidden) cancelDrag(); });
+
+function insertionIndex(x,y,skipUid){
+  const els=$$('#answer .tile').filter(el=>el.dataset.uid!==skipUid);
+  let i=0;
+  for(const el of els){
+    const r=el.getBoundingClientRect();
+    if(y>r.bottom || (y>=r.top && x > r.left+r.width/2)) i++;
+  }
+  return i;
+}
+
+function showTarget(x,y){
+  const ans=$('#answer'), bank=$('#bank');
+  const r=ans.getBoundingClientRect();
+  const over = x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom;
+  ans.classList.toggle('over',over); bank.classList.toggle('over',!over);
+  $$('#answer .gap').forEach(g=>g.remove());
+  if(over && drag){
+    const gap=document.createElement('div'); gap.className='gap';
+    const els=$$('#answer .tile').filter(el=>el.dataset.uid!==drag.uid);
+    const at=insertionIndex(x,y,drag.uid);
+    els[at] ? ans.insertBefore(gap,els[at]) : ans.appendChild(gap);
+  }
+}
+function clearTarget(){
+  const a=$('#answer'), b=$('#bank');
+  if(a){ a.classList.remove('over'); $$('#answer .gap').forEach(g=>g.remove()); }
+  if(b) b.classList.remove('over');
+}
+
+function moveTile(t,where,at){
+  const was=t.where;
+  tiles=tiles.filter(x=>x!==t);
+  if(where==='answer'){
+    const ansIdx = at==null ? tiles.filter(x=>x.where==='answer').length : at;
+    let seen=0,pos=tiles.length;
+    for(let i=0;i<tiles.length;i++){
+      if(tiles[i].where==='answer'){ if(seen===ansIdx){pos=i;break;} seen++; }
+    }
+    if(seen<ansIdx) pos=tiles.length;
+    t.where='answer'; tiles.splice(pos,0,t);
+  }else{ t.where='bank'; tiles.push(t); }
+  if(was!==where || where==='answer'){
+    verdictState=null;
+    $('#verdict').className='verdict'; $('#verdict').innerHTML=''; $('#note').innerHTML='';
+  }
+  paint();
+}
+
+// ---------- checking ----------
+const CHECK='<svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>';
+const CROSS='<svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+
+function check(){
+  const s=SENTENCES[idx];
+  const got=tiles.filter(t=>t.where==='answer').map(t=>t.text);
+  const ok=[s.khmer,...(s.alsoAccept||[])].some(v=>v.length===got.length&&v.every((w,i)=>w===got[i]));
+  verdictState= ok?'ok':'bad';
+  const v=$('#verdict');
+  v.className='verdict '+(ok?'ok':'bad');
+  v.innerHTML=(ok?CHECK:CROSS)+'<span>'+(ok?'Correct':'Not quite — try again')+'</span>';
+  $('#note').innerHTML = (ok && s.note) ? '<div class="note">'+s.note+'</div>' : '';
+  if(ok) revealEnglish();          // confirm the meaning once it is earned
+  paint();
+}
+
+boot();
+</script>
+</body>
+</html>

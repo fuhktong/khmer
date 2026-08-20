@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1, "level": 1,
+    "english": "I eat rice.",
+    "khmer": ["knyom", "nyam", "bay"],
+    "alsoAccept": []
+  },
+  {
+    "id": 2, "level": 1,
+    "english": "I go to the market.",
+    "khmer": ["knyom", "dtow", "psa"],
+    "alsoAccept": []
+  },
+  {
+    "id": 3, "level": 1,
+    "english": "You drink water.",
+    "khmer": ["neak", "pak", "dtuk"],
+    "alsoAccept": []
+  },
+  {
+    "id": 4, "level": 1,
+    "english": "The house is big.",
+    "khmer": ["pteah", "tom"],
+    "alsoAccept": [],
+    "note": "No verb 'to be' before adjectives in Khmer."
+  },
+  {
+    "id": 5, "level": 2,
+    "english": "I don't eat fish.",
+    "khmer": ["knyom", "min", "nyam", "dtrey", "dtay"],
+    "alsoAccept": [],
+    "note": "Negation wraps the verb: min ... dtay."
+  },
+  {
+    "id": 6, "level": 2,
+    "english": "I will go to school tomorrow.",
+    "khmer": ["knyom", "nung", "dtow", "sala-rean", "sa-aik"],
+    "alsoAccept": [["sa-aik", "knyom", "nung", "dtow", "sala-rean"]],
+    "note": "Time words can lead the sentence or trail it."
+  },
+  {
+    "id": 7, "level": 2,
+    "english": "Where are you going?",
+    "khmer": ["neak", "dtow", "ei-na"],
+    "alsoAccept": [],
+    "note": "Question words stay in place; no fronting like English."
+  },
+  {
+    "id": 8, "level": 2,
+    "english": "Do you have money?",
+    "khmer": ["neak", "mean", "luy", "dtay"],
+    "alsoAccept": [],
+    "note": "Yes/no questions end in the particle dtay."
+  },
+  {
+    "id": 9, "level": 3,
+    "english": "I want to eat delicious food.",
+    "khmer": ["knyom", "jong", "nyam", "m'howb", "chnganh"],
+    "alsoAccept": [],
+    "note": "Adjective follows its noun: m'howb chnganh."
+  },
+  {
+    "id": 10, "level": 3,
+    "english": "Today I go to the market with my friend.",
+    "khmer": ["t'ngai-nih", "knyom", "dtow", "psa", "jea-moy", "met-peak", "knyom"],
+    "alsoAccept": [["knyom", "dtow", "psa", "jea-moy", "met-peak", "knyom", "t'ngai-nih"]],
+    "note": "Possession is postposed: met-peak knyom = friend-my."
+  }
+]

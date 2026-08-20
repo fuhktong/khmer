@@ -1,0 +1,19 @@
+# Khmer Matching Worksheet 1
+
+Match the English words with their Khmer translations:
+
+1. apple                    A) dtuk
+2. teacher                  B) sa-aik
+3. market                   C) groo-bong-rean
+4. water                    D) met-peak / bpouk-mak
+5. family                   E) oh-gom-lang
+6. friend                   F) plae-bporm
+7. beautiful                G) sa-art
+8. tomorrow                 H) psa
+9. understand               I) yol
+10. tired                   J) gru-saa
+
+---
+
+## Answer Key:
+1-F, 2-C, 3-H, 4-A, 5-J, 6-D, 7-G, 8-B, 9-I, 10-E

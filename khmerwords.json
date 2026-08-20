@@ -1,0 +1,2256 @@
+[
+  {
+    "english": "a lot",
+    "khmer": "jraurn",
+    "khmerScript": "ច្រើន"
+  },
+  {
+    "english": "about (approximately)",
+    "khmer": "bro-hael",
+    "khmerScript": "ប្រហែល"
+  },
+  {
+    "english": "about (concerning)",
+    "khmer": "om-bpee",
+    "khmerScript": "អំពី"
+  },
+  {
+    "english": "add",
+    "khmer": "bon-taem",
+    "khmerScript": "បន្ថែម",
+    "variants": [
+      "taem"
+    ]
+  },
+  {
+    "english": "after",
+    "khmer": "bon-dtoab-bpee",
+    "khmerScript": "បន្ទាប់ពី",
+    "variants": [
+      "graowee"
+    ]
+  },
+  {
+    "english": "afternoon",
+    "khmer": "rosael",
+    "khmerScript": "រសៀល",
+    "variants": [
+      "bpayl-t'ngai"
+    ]
+  },
+  {
+    "english": "again",
+    "khmer": "mdong-dteat",
+    "khmerScript": "ម្ដងទៀត"
+  },
+  {
+    "english": "age",
+    "khmer": "ah-yu",
+    "khmerScript": "អាយុ"
+  },
+  {
+    "english": "ago",
+    "khmer": "mun",
+    "khmerScript": "មុន"
+  },
+  {
+    "english": "alone",
+    "khmer": "mneak-aeng",
+    "khmerScript": "ម្នាក់ឯង"
+  },
+  {
+    "english": "already",
+    "khmer": "hai",
+    "khmerScript": "ហើយ"
+  },
+  {
+    "english": "also",
+    "khmer": "gaw",
+    "khmerScript": "ក៏",
+    "pattern": "gaw ... dae"
+  },
+  {
+    "english": "altogether",
+    "khmer": "dteang-oh-k'nea",
+    "khmerScript": "ទាំងអស់គ្នា"
+  },
+  {
+    "english": "always",
+    "khmer": "dtaeng-dtae",
+    "khmerScript": "ជានិច្ច / រហូត",
+    "variants": [
+      "rohot"
+    ]
+  },
+  {
+    "english": "america",
+    "khmer": "Amaric",
+    "khmerScript": "អាមេរិក"
+  },
+  {
+    "english": "and",
+    "khmer": "hai-nung",
+    "khmerScript": "ហើយនិង / និង",
+    "variants": [
+      "nung"
+    ]
+  },
+  {
+    "english": "apple",
+    "khmer": "plae-bporm",
+    "khmerScript": "ផ្លែប៉ោម"
+  },
+  {
+    "english": "arrest",
+    "khmer": "jab",
+    "khmerScript": "ចាប់"
+  },
+  {
+    "english": "arrive (here)",
+    "khmer": "mok-dol",
+    "khmerScript": "មកដល់"
+  },
+  {
+    "english": "arrive (there)",
+    "khmer": "dtow-dol",
+    "khmerScript": "ទៅដល់"
+  },
+  {
+    "english": "ask (a question)",
+    "khmer": "suer",
+    "khmerScript": "សួរ"
+  },
+  {
+    "english": "ask for (request)",
+    "khmer": "som",
+    "khmerScript": "សុំ"
+  },
+  {
+    "english": "at",
+    "khmer": "nau",
+    "khmerScript": "នៅ"
+  },
+  {
+    "english": "auntie (parent's older sibling)",
+    "khmer": "om-srey",
+    "khmerScript": "អុំស្រី"
+  },
+  {
+    "english": "auntie (parent's younger sibling)",
+    "khmer": "ming",
+    "khmerScript": "មីង"
+  },
+  {
+    "english": "bad",
+    "khmer": "onn",
+    "khmerScript": "អាក្រក់"
+  },
+  {
+    "english": "banana",
+    "khmer": "plae jayk",
+    "khmerScript": "ចេក"
+  },
+  {
+    "english": "bank",
+    "khmer": "to-nea-gea",
+    "khmerScript": "ធនាគារ"
+  },
+  {
+    "english": "basil",
+    "khmer": "jee",
+    "khmerScript": "ជី"
+  },
+  {
+    "english": "bathroom",
+    "khmer": "bon-dtob-dtuk",
+    "khmerScript": "បន្ទប់ទឹក"
+  },
+  {
+    "english": "beautiful",
+    "khmer": "sa-art",
+    "khmerScript": "ស្អាត"
+  },
+  {
+    "english": "because",
+    "khmer": "bpee-bprooah",
+    "khmerScript": "ពីព្រោះ / ព្រោះ / ដោយសារ",
+    "variants": [
+      "bprooah",
+      "daoy-sa"
+    ]
+  },
+  {
+    "english": "bed",
+    "khmer": "gray",
+    "khmerScript": "គ្រែ"
+  },
+  {
+    "english": "beef",
+    "khmer": "saj-go",
+    "khmerScript": "សាច់គោ"
+  },
+  {
+    "english": "beer",
+    "khmer": "bi-yea",
+    "khmerScript": "ប៊ីយេរ"
+  },
+  {
+    "english": "before",
+    "khmer": "bpee-mun",
+    "khmerScript": "ពីមុន / មុនពេល / មុន",
+    "variants": [
+      "mun-bpayl",
+      "mun"
+    ]
+  },
+  {
+    "english": "behind",
+    "khmer": "graowee",
+    "khmerScript": "ក្រោយ"
+  },
+  {
+    "english": "big",
+    "khmer": "tom",
+    "khmerScript": "ធំ"
+  },
+  {
+    "english": "bike",
+    "khmer": "gong",
+    "khmerScript": "កង់"
+  },
+  {
+    "english": "bitter",
+    "khmer": "lwiing",
+    "khmerScript": "ល្វីង"
+  },
+  {
+    "english": "black",
+    "khmer": "bpor-kmao",
+    "khmerScript": "ពណ៌ខ្មៅ"
+  },
+  {
+    "english": "blue",
+    "khmer": "bpor-keaw",
+    "khmerScript": "ពណ៌ខៀវ"
+  },
+  {
+    "english": "boil (food)",
+    "khmer": "s'ngao",
+    "khmerScript": "ស្ងោរ"
+  },
+  {
+    "english": "boil (water)",
+    "khmer": "dam-dtuk",
+    "khmerScript": "ដាំទឹក"
+  },
+  {
+    "english": "book",
+    "khmer": "seew-pow",
+    "khmerScript": "សៀវភៅ"
+  },
+  {
+    "english": "boss",
+    "khmer": "may",
+    "khmerScript": "ម៉ែ"
+  },
+  {
+    "english": "both",
+    "khmer": "dteang-bpee",
+    "khmerScript": "ទាំងពីរ"
+  },
+  {
+    "english": "bother",
+    "khmer": "rom-kan",
+    "khmerScript": "រំខាន"
+  },
+  {
+    "english": "brave",
+    "khmer": "kla-han",
+    "khmerScript": "ក្លាហាន"
+  },
+  {
+    "english": "bread",
+    "khmer": "nom-bpang"
+  },
+  {
+    "english": "break time",
+    "khmer": "somrak",
+    "variants": [
+      "jenh-layng"
+    ]
+  },
+  {
+    "english": "breakfast",
+    "khmer": "bay-bpayl-bpruk"
+  },
+  {
+    "english": "brother (older)",
+    "khmer": "bong-broh",
+    "khmerScript": "បងប្រុស"
+  },
+  {
+    "english": "brother (younger)",
+    "khmer": "p'oun-broh",
+    "khmerScript": "ប្អូនប្រុស"
+  },
+  {
+    "english": "brother-in-law (older)",
+    "khmer": "bong-broh-tlai"
+  },
+  {
+    "english": "brother-in-law (younger)",
+    "khmer": "p'oun-broh-tlai"
+  },
+  {
+    "english": "brown",
+    "khmer": "bpor-tnoat"
+  },
+  {
+    "english": "build",
+    "khmer": "sang-song",
+    "khmerScript": "សាងសង់"
+  },
+  {
+    "english": "busy",
+    "khmer": "ro-wol"
+  },
+  {
+    "english": "but",
+    "khmer": "bpon-dtae",
+    "variants": [
+      "dtae"
+    ]
+  },
+  {
+    "english": "buy",
+    "khmer": "dtinh"
+  },
+  {
+    "english": "by oneself",
+    "khmer": "daoy-kloun-aeng"
+  },
+  {
+    "english": "call (by phone)",
+    "khmer": "dtay",
+    "khmerScript": "ទូរស័ព្ទ"
+  },
+  {
+    "english": "call (call out to someone)",
+    "khmer": "hao",
+    "khmerScript": "ហៅ"
+  },
+  {
+    "english": "can",
+    "khmer": "aaj",
+    "khmerScript": "អាច",
+    "pattern": "aaj ... ban"
+  },
+  {
+    "english": "car",
+    "khmer": "lan"
+  },
+  {
+    "english": "careful",
+    "khmer": "bpro-yat"
+  },
+  {
+    "english": "careless",
+    "khmer": "bpro-haeh"
+  },
+  {
+    "english": "carrot",
+    "khmer": "ga-rot"
+  },
+  {
+    "english": "cauliflower",
+    "khmer": "pka-kat-na"
+  },
+  {
+    "english": "chair",
+    "khmer": "gao-ey"
+  },
+  {
+    "english": "cheap",
+    "khmer": "taok"
+  },
+  {
+    "english": "chicken",
+    "khmer": "saj-moan"
+  },
+  {
+    "english": "child",
+    "khmer": "kmayng",
+    "khmerScript": "ក្មេង"
+  },
+  {
+    "english": "chili",
+    "khmer": "ma-dteh"
+  },
+  {
+    "english": "chili sauce",
+    "khmer": "dtuk-ma-dteh"
+  },
+  {
+    "english": "chinese",
+    "khmer": "chen"
+  },
+  {
+    "english": "chop",
+    "khmer": "gab"
+  },
+  {
+    "english": "city",
+    "khmer": "dtee-grong"
+  },
+  {
+    "english": "clam",
+    "khmer": "ngeaw"
+  },
+  {
+    "english": "clean",
+    "khmer": "som-aat"
+  },
+  {
+    "english": "clear",
+    "khmer": "jbah"
+  },
+  {
+    "english": "close",
+    "khmer": "bud"
+  },
+  {
+    "english": "closet",
+    "khmer": "dtoo-kaow-aow"
+  },
+  {
+    "english": "coconut",
+    "khmer": "plae-dong"
+  },
+  {
+    "english": "coffee",
+    "khmer": "cafe"
+  },
+  {
+    "english": "cold",
+    "khmer": "dtro-jeak"
+  },
+  {
+    "english": "color",
+    "khmer": "bpor"
+  },
+  {
+    "english": "come",
+    "khmer": "mok"
+  },
+  {
+    "english": "computer",
+    "khmer": "gom-pu-dtaur"
+  },
+  {
+    "english": "confused",
+    "khmer": "jro-lom"
+  },
+  {
+    "english": "cook",
+    "khmer": "twer-m'hop"
+  },
+  {
+    "english": "corner",
+    "khmer": "gaj-jroung"
+  },
+  {
+    "english": "country",
+    "khmer": "bro-dteh"
+  },
+  {
+    "english": "cousin",
+    "khmer": "jee-don-mouy"
+  },
+  {
+    "english": "crab",
+    "khmer": "gdam"
+  },
+  {
+    "english": "cucumber",
+    "khmer": "dtro-sok"
+  },
+  {
+    "english": "curry",
+    "khmer": "ga-ree"
+  },
+  {
+    "english": "dangerous",
+    "khmer": "mean-grooah-tnak"
+  },
+  {
+    "english": "daughter",
+    "khmer": "gon-srey"
+  },
+  {
+    "english": "daughter-in-law",
+    "khmer": "gon-bro-sa-srey"
+  },
+  {
+    "english": "day",
+    "khmer": "t'ngai"
+  },
+  {
+    "english": "delicious",
+    "khmer": "chnganh",
+    "khmerScript": "ឆ្ងាញ់"
+  },
+  {
+    "english": "difficult",
+    "khmer": "bpee-bak"
+  },
+  {
+    "english": "discuss",
+    "khmer": "bpi-peak-saa"
+  },
+  {
+    "english": "doctor",
+    "khmer": "groo-bpaid",
+    "variants": [
+      "bpaid"
+    ]
+  },
+  {
+    "english": "dog",
+    "khmer": "chhke",
+    "khmerScript": "ឆ្កែ"
+  },
+  {
+    "english": "drink",
+    "khmer": "pak"
+  },
+  {
+    "english": "easy",
+    "khmer": "sruerl"
+  },
+  {
+    "english": "eat",
+    "khmer": "nyam"
+  },
+  {
+    "english": "eggplant",
+    "khmer": "plow-dey-grohom"
+  },
+  {
+    "english": "eight",
+    "khmer": "bpram-bey"
+  },
+  {
+    "english": "eighty",
+    "khmer": "bpaet-sub"
+  },
+  {
+    "english": "email",
+    "khmer": "email"
+  },
+  {
+    "english": "energy",
+    "khmer": "mean-gom-lang"
+  },
+  {
+    "english": "england",
+    "khmer": "onglay"
+  },
+  {
+    "english": "english",
+    "khmer": "onglay"
+  },
+  {
+    "english": "evening",
+    "khmer": "l'ngeaj",
+    "variants": [
+      "bpayl-l'ngeaj"
+    ]
+  },
+  {
+    "english": "ever",
+    "khmer": "tloap"
+  },
+  {
+    "english": "every",
+    "khmer": "roal"
+  },
+  {
+    "english": "everybody",
+    "khmer": "neak-dteang-oh-knea"
+  },
+  {
+    "english": "everyone",
+    "khmer": "neak-dteang-oh-knea"
+  },
+  {
+    "english": "evil",
+    "khmer": "ah-grok"
+  },
+  {
+    "english": "excuse me",
+    "khmer": "som-dtoh"
+  },
+  {
+    "english": "exercise",
+    "khmer": "lumhat bran"
+  },
+  {
+    "english": "expensive",
+    "khmer": "tlai"
+  },
+  {
+    "english": "faithful",
+    "khmer": "smoh-dtrong"
+  },
+  {
+    "english": "family",
+    "khmer": "gru-saa"
+  },
+  {
+    "english": "far",
+    "khmer": "ch'ngay"
+  },
+  {
+    "english": "fast",
+    "khmer": "lern"
+  },
+  {
+    "english": "fat",
+    "khmer": "toat"
+  },
+  {
+    "english": "father",
+    "khmer": "bpaa",
+    "variants": [
+      "bpuk"
+    ]
+  },
+  {
+    "english": "feel",
+    "khmer": "ah-rom"
+  },
+  {
+    "english": "fiance",
+    "khmer": "goo-don-dung"
+  },
+  {
+    "english": "fifty",
+    "khmer": "ha-sub"
+  },
+  {
+    "english": "find",
+    "khmer": "rok-kernh"
+  },
+  {
+    "english": "fine",
+    "khmer": "sok-sabay"
+  },
+  {
+    "english": "fish",
+    "khmer": "dtrey"
+  },
+  {
+    "english": "fish sauce",
+    "khmer": "dtuk-dtrey"
+  },
+  {
+    "english": "five",
+    "khmer": "bpram"
+  },
+  {
+    "english": "fix (repair)",
+    "khmer": "joouh-jul",
+    "khmerScript": "ជួសជុល"
+  },
+  {
+    "english": "food",
+    "khmer": "m'howb",
+    "khmerScript": "ម្ហូប"
+  },
+  {
+    "english": "for (give to)",
+    "khmer": "aowee",
+    "khmerScript": "ឱ្យ"
+  },
+  {
+    "english": "for (intended for)",
+    "khmer": "som-rab",
+    "khmerScript": "សម្រាប់"
+  },
+  {
+    "english": "forty",
+    "khmer": "sae-sub"
+  },
+  {
+    "english": "four",
+    "khmer": "buern"
+  },
+  {
+    "english": "free (available time)",
+    "khmer": "dtom-nay",
+    "khmerScript": "ទំនេរ"
+  },
+  {
+    "english": "free (no cost)",
+    "khmer": "ot-gut-loy",
+    "khmerScript": "អត់គិតលុយ"
+  },
+  {
+    "english": "friday",
+    "khmer": "t'ngai sok"
+  },
+  {
+    "english": "friend",
+    "khmer": "met-peak",
+    "variants": [
+      "bpouk-mak"
+    ]
+  },
+  {
+    "english": "from",
+    "khmer": "bpee"
+  },
+  {
+    "english": "fruit",
+    "khmer": "plae-cher"
+  },
+  {
+    "english": "fry (deep fry)",
+    "khmer": "jean",
+    "khmerScript": "ចៀន"
+  },
+  {
+    "english": "fry (stir fry)",
+    "khmer": "cha",
+    "khmerScript": "ឆា"
+  },
+  {
+    "english": "garlic",
+    "khmer": "k'dtum"
+  },
+  {
+    "english": "gate",
+    "khmer": "twea-robong"
+  },
+  {
+    "english": "give",
+    "khmer": "aowee"
+  },
+  {
+    "english": "go",
+    "khmer": "dtow"
+  },
+  {
+    "english": "good",
+    "khmer": "la-or"
+  },
+  {
+    "english": "good bye (casual)",
+    "khmer": "lea-hai",
+    "khmerScript": "លាហើយ"
+  },
+  {
+    "english": "good bye (formal)",
+    "khmer": "jum-reap-lea",
+    "khmerScript": "ជម្រាបលា"
+  },
+  {
+    "english": "government",
+    "khmer": "rot-taa-pi-bal"
+  },
+  {
+    "english": "grand father",
+    "khmer": "lok-dtaa",
+    "variants": [
+      "dtaa"
+    ]
+  },
+  {
+    "english": "grand mother",
+    "khmer": "lok-yeay",
+    "variants": [
+      "yeay"
+    ]
+  },
+  {
+    "english": "grandma",
+    "khmer": "lok-yeay"
+  },
+  {
+    "english": "grandpa",
+    "khmer": "lok-dta"
+  },
+  {
+    "english": "grape",
+    "khmer": "plae dtom-bpeang-bay-joo"
+  },
+  {
+    "english": "grate",
+    "khmer": "chooh"
+  },
+  {
+    "english": "gray",
+    "khmer": "bpor-bro-peh"
+  },
+  {
+    "english": "green",
+    "khmer": "bpor-bai-dtong"
+  },
+  {
+    "english": "grill",
+    "khmer": "ang"
+  },
+  {
+    "english": "gym",
+    "khmer": "gon-laeng-hat-bpran"
+  },
+  {
+    "english": "half",
+    "khmer": "gon-lah"
+  },
+  {
+    "english": "hang out",
+    "khmer": "daur-layng"
+  },
+  {
+    "english": "happy",
+    "khmer": "rikreay",
+    "khmerScript": "រីករាយ"
+  },
+  {
+    "english": "hard",
+    "khmer": "rung"
+  },
+  {
+    "english": "has",
+    "khmer": "mean"
+  },
+  {
+    "english": "have",
+    "khmer": "mean"
+  },
+  {
+    "english": "he",
+    "khmer": "goad"
+  },
+  {
+    "english": "health",
+    "khmer": "sok-ga-peap"
+  },
+  {
+    "english": "hello (casual)",
+    "khmer": "suer-sdey",
+    "khmerScript": "សួស្ដី"
+  },
+  {
+    "english": "hello (formal)",
+    "khmer": "jum-reap-suer",
+    "khmerScript": "ជម្រាបសួរ"
+  },
+  {
+    "english": "help",
+    "khmer": "jouy"
+  },
+  {
+    "english": "her (object: I saw her)",
+    "khmer": "neang"
+  },
+  {
+    "english": "her (possessive: her book)",
+    "khmer": "roboh-neang"
+  },
+  {
+    "english": "here",
+    "khmer": "dtee-nih"
+  },
+  {
+    "english": "high",
+    "khmer": "kpooah"
+  },
+  {
+    "english": "him",
+    "khmer": "goad"
+  },
+  {
+    "english": "his",
+    "khmer": "roboh-goad",
+    "variants": [
+      "goad"
+    ]
+  },
+  {
+    "english": "hit",
+    "khmer": "wai"
+  },
+  {
+    "english": "holiday",
+    "khmer": "thngai chhob somrak"
+  },
+  {
+    "english": "home",
+    "khmer": "pteah",
+    "khmerScript": "ផ្ទះ"
+  },
+  {
+    "english": "homework",
+    "khmer": "gej-ga-pteah"
+  },
+  {
+    "english": "hospital",
+    "khmer": "mon-dtee-bpaid",
+    "variants": [
+      "bpaid"
+    ]
+  },
+  {
+    "english": "hot",
+    "khmer": "kdaw"
+  },
+  {
+    "english": "hotel",
+    "khmer": "son-ta-gea"
+  },
+  {
+    "english": "hour",
+    "khmer": "maong"
+  },
+  {
+    "english": "house",
+    "khmer": "pteah"
+  },
+  {
+    "english": "how",
+    "khmer": "yang-mej",
+    "khmerScript": "យ៉ាងម៉េច"
+  },
+  {
+    "english": "how many / how much",
+    "khmer": "bpon-man",
+    "khmerScript": "ប៉ុន្មាន"
+  },
+  {
+    "english": "hundred",
+    "khmer": "mouy-roy"
+  },
+  {
+    "english": "hungry",
+    "khmer": "klean"
+  },
+  {
+    "english": "husband",
+    "khmer": "pdey"
+  },
+  {
+    "english": "hygiene",
+    "khmer": "ah-na-mai"
+  },
+  {
+    "english": "i / me",
+    "khmer": "knyom",
+    "variants": [
+      "nyom"
+    ]
+  },
+  {
+    "english": "idea",
+    "khmer": "gom-nut"
+  },
+  {
+    "english": "if",
+    "khmer": "baur",
+    "variants": [
+      "baur-sen",
+      "baur-sen-jea"
+    ]
+  },
+  {
+    "english": "in (inside)",
+    "khmer": "knong",
+    "khmerScript": "ក្នុង"
+  },
+  {
+    "english": "in front of",
+    "khmer": "muk"
+  },
+  {
+    "english": "in order to",
+    "khmer": "daurm-bey"
+  },
+  {
+    "english": "inside",
+    "khmer": "k'nong"
+  },
+  {
+    "english": "it",
+    "khmer": "wea"
+  },
+  {
+    "english": "its",
+    "khmer": "roboh-wea",
+    "variants": [
+      "wea"
+    ]
+  },
+  {
+    "english": "job",
+    "khmer": "ga-ngea"
+  },
+  {
+    "english": "juice",
+    "khmer": "dtuk-plae-cher"
+  },
+  {
+    "english": "just",
+    "khmer": "groan-dtae"
+  },
+  {
+    "english": "khmer rouge",
+    "khmer": "khmer-gro-hom"
+  },
+  {
+    "english": "kill",
+    "khmer": "som-lab"
+  },
+  {
+    "english": "kilogram",
+    "khmer": "kilo"
+  },
+  {
+    "english": "korean",
+    "khmer": "koray"
+  },
+  {
+    "english": "language",
+    "khmer": "pea-saa"
+  },
+  {
+    "english": "last",
+    "khmer": "mun"
+  },
+  {
+    "english": "learn",
+    "khmer": "rean"
+  },
+  {
+    "english": "leave",
+    "khmer": "jenh-bpee"
+  },
+  {
+    "english": "left",
+    "khmer": "kang-ch'wayng"
+  },
+  {
+    "english": "lesson",
+    "khmer": "may-rean"
+  },
+  {
+    "english": "lettuce",
+    "khmer": "salad"
+  },
+  {
+    "english": "lie",
+    "khmer": "ko-hok"
+  },
+  {
+    "english": "like",
+    "khmer": "joal-jet"
+  },
+  {
+    "english": "listen",
+    "khmer": "sdab"
+  },
+  {
+    "english": "little",
+    "khmer": "dtij-dtij"
+  },
+  {
+    "english": "live",
+    "khmer": "rooah-nau"
+  },
+  {
+    "english": "lobster",
+    "khmer": "bong-gong"
+  },
+  {
+    "english": "long",
+    "khmer": "wayng"
+  },
+  {
+    "english": "longan",
+    "khmer": "plae mean"
+  },
+  {
+    "english": "looking for",
+    "khmer": "rok-merl"
+  },
+  {
+    "english": "lose (game)",
+    "khmer": "janh"
+  },
+  {
+    "english": "lose (something)",
+    "khmer": "bat"
+  },
+  {
+    "english": "lose (way)",
+    "khmer": "wong-wayng-plow"
+  },
+  {
+    "english": "lose (weight)",
+    "khmer": "srok-kilo",
+    "variants": [
+      "srok-saj"
+    ]
+  },
+  {
+    "english": "love",
+    "khmer": "srolanh"
+  },
+  {
+    "english": "low",
+    "khmer": "dteap"
+  },
+  {
+    "english": "make (something)",
+    "khmer": "twer"
+  },
+  {
+    "english": "make (to create)",
+    "khmer": "bong-gaurt"
+  },
+  {
+    "english": "make (to make someone)",
+    "khmer": "twer-aowee"
+  },
+  {
+    "english": "many",
+    "khmer": "jraurn",
+    "khmerScript": "ច្រើន"
+  },
+  {
+    "english": "market",
+    "khmer": "psa"
+  },
+  {
+    "english": "meat",
+    "khmer": "saj"
+  },
+  {
+    "english": "meet",
+    "khmer": "joub"
+  },
+  {
+    "english": "meeting",
+    "khmer": "bpro-jom"
+  },
+  {
+    "english": "message",
+    "khmer": "saa",
+    "khmerScript": "សារ"
+  },
+  {
+    "english": "million",
+    "khmer": "mouy-lean"
+  },
+  {
+    "english": "mind",
+    "khmer": "gom-nut"
+  },
+  {
+    "english": "minute",
+    "khmer": "nea-dtee"
+  },
+  {
+    "english": "mix",
+    "khmer": "leay",
+    "variants": [
+      "jro-bol"
+    ]
+  },
+  {
+    "english": "monday",
+    "khmer": "t'ngai jan"
+  },
+  {
+    "english": "money",
+    "khmer": "luy"
+  },
+  {
+    "english": "month",
+    "khmer": "kae"
+  },
+  {
+    "english": "morning",
+    "khmer": "bpruk",
+    "variants": [
+      "pruk",
+      "bpayl-pruk"
+    ]
+  },
+  {
+    "english": "most",
+    "khmer": "peak-j'raurn"
+  },
+  {
+    "english": "mother",
+    "khmer": "mak",
+    "variants": [
+      "mae"
+    ]
+  },
+  {
+    "english": "motor",
+    "khmer": "moto"
+  },
+  {
+    "english": "move",
+    "khmer": "reu",
+    "variants": [
+      "do"
+    ]
+  },
+  {
+    "english": "movie",
+    "khmer": "roeung"
+  },
+  {
+    "english": "MSG",
+    "khmer": "bee-jayng"
+  },
+  {
+    "english": "much",
+    "khmer": "jraurn",
+    "khmerScript": "ច្រើន"
+  },
+  {
+    "english": "must",
+    "khmer": "dtrow"
+  },
+  {
+    "english": "my",
+    "khmer": "roboh-nyom",
+    "variants": [
+      "nyom"
+    ]
+  },
+  {
+    "english": "name",
+    "khmer": "ch'mooah"
+  },
+  {
+    "english": "nap",
+    "khmer": "gayng-t'ngai"
+  },
+  {
+    "english": "national road",
+    "khmer": "plow-jeat"
+  },
+  {
+    "english": "nationality",
+    "khmer": "jon-jeat"
+  },
+  {
+    "english": "near",
+    "khmer": "jit"
+  },
+  {
+    "english": "need",
+    "khmer": "dtrow-ga"
+  },
+  {
+    "english": "nephew",
+    "khmer": "kmouy-bproh"
+  },
+  {
+    "english": "never",
+    "khmer": "min-tloap"
+  },
+  {
+    "english": "new",
+    "khmer": "tmey"
+  },
+  {
+    "english": "next",
+    "khmer": "graowee"
+  },
+  {
+    "english": "nice",
+    "khmer": "sa-art"
+  },
+  {
+    "english": "niece",
+    "khmer": "kmouy-srey"
+  },
+  {
+    "english": "night",
+    "khmer": "yob",
+    "variants": [
+      "bpayl-yob"
+    ]
+  },
+  {
+    "english": "nine",
+    "khmer": "bpram-buern"
+  },
+  {
+    "english": "ninety",
+    "khmer": "gao-sub"
+  },
+  {
+    "english": "no / not so",
+    "khmer": "ot-dtay",
+    "khmerScript": "អត់ទេ"
+  },
+  {
+    "english": "noon",
+    "khmer": "t'ngai-dtrong"
+  },
+  {
+    "english": "not",
+    "khmer": "min",
+    "khmerScript": "មិន",
+    "variants": [
+      "ot"
+    ]
+  },
+  {
+    "english": "now",
+    "khmer": "ey-low-nih"
+  },
+  {
+    "english": "often",
+    "khmer": "ou-sa",
+    "variants": [
+      "nyuk-nyoab"
+    ]
+  },
+  {
+    "english": "old",
+    "khmer": "jah"
+  },
+  {
+    "english": "on",
+    "khmer": "ler"
+  },
+  {
+    "english": "on the way",
+    "khmer": "nau-dtam-plow"
+  },
+  {
+    "english": "one",
+    "khmer": "mouy"
+  },
+  {
+    "english": "onion",
+    "khmer": "k'dtum-barang"
+  },
+  {
+    "english": "open",
+    "khmer": "baurk"
+  },
+  {
+    "english": "opposite",
+    "khmer": "dtol-muk"
+  },
+  {
+    "english": "orange (color)",
+    "khmer": "bpor-dtuk-groj",
+    "khmerScript": "ពណ៌ទឹកក្រូច"
+  },
+  {
+    "english": "orange (fruit)",
+    "khmer": "plae-groj",
+    "khmerScript": "ផ្លែក្រូច"
+  },
+  {
+    "english": "organization",
+    "khmer": "ong-ga"
+  },
+  {
+    "english": "our",
+    "khmer": "roboh-bpouk-yerng"
+  },
+  {
+    "english": "out",
+    "khmer": "graw"
+  },
+  {
+    "english": "outside",
+    "khmer": "graw"
+  },
+  {
+    "english": "page",
+    "khmer": "dtom-bpor"
+  },
+  {
+    "english": "pants",
+    "khmer": "kaow"
+  },
+  {
+    "english": "papaya",
+    "khmer": "plae l'hong"
+  },
+  {
+    "english": "parents",
+    "khmer": "bpaa-mak",
+    "variants": [
+      "bpuk-mae"
+    ]
+  },
+  {
+    "english": "parents-in-law",
+    "khmer": "bpaa-mak-kmayk"
+  },
+  {
+    "english": "party",
+    "khmer": "jub-leang"
+  },
+  {
+    "english": "past tense marker",
+    "khmer": "ban",
+    "khmerScript": "បាន"
+  },
+  {
+    "english": "peel",
+    "khmer": "jit"
+  },
+  {
+    "english": "pepper",
+    "khmer": "ma-rek"
+  },
+  {
+    "english": "person / people",
+    "khmer": "mnooah",
+    "khmerScript": "មនុស្ស"
+  },
+  {
+    "english": "phone",
+    "khmer": "dtoo-ra-sab"
+  },
+  {
+    "english": "photo",
+    "khmer": "roob-tort"
+  },
+  {
+    "english": "pineapple",
+    "khmer": "plae m'noah"
+  },
+  {
+    "english": "ping pong",
+    "khmer": "ping-pong"
+  },
+  {
+    "english": "pink",
+    "khmer": "bpor pka-chook"
+  },
+  {
+    "english": "place",
+    "khmer": "gon-laeng"
+  },
+  {
+    "english": "plan",
+    "khmer": "gom-rong"
+  },
+  {
+    "english": "play",
+    "khmer": "layng"
+  },
+  {
+    "english": "please",
+    "khmer": "som",
+    "khmerScript": "សុំ",
+    "pattern": "som ... pong"
+  },
+  {
+    "english": "pool",
+    "khmer": "aang hael dtuk"
+  },
+  {
+    "english": "pork",
+    "khmer": "saj-jrook"
+  },
+  {
+    "english": "potato",
+    "khmer": "dom-long-barang"
+  },
+  {
+    "english": "practice",
+    "khmer": "hat"
+  },
+  {
+    "english": "prepare",
+    "khmer": "reab-jom"
+  },
+  {
+    "english": "problem",
+    "khmer": "bpanh-haa"
+  },
+  {
+    "english": "promise",
+    "khmer": "soniya"
+  },
+  {
+    "english": "province",
+    "khmer": "kaet"
+  },
+  {
+    "english": "put",
+    "khmer": "dak"
+  },
+  {
+    "english": "question particle",
+    "khmer": "dtay",
+    "khmerScript": "ទេ"
+  },
+  {
+    "english": "rambotan",
+    "khmer": "plae sao-mao"
+  },
+  {
+    "english": "rape",
+    "khmer": "rom-lop"
+  },
+  {
+    "english": "rarely",
+    "khmer": "min-sow"
+  },
+  {
+    "english": "read",
+    "khmer": "aan"
+  },
+  {
+    "english": "really",
+    "khmer": "mayn-dtayn",
+    "khmerScript": "មែនទែន"
+  },
+  {
+    "english": "red",
+    "khmer": "bpor gro-hom"
+  },
+  {
+    "english": "refrigerator",
+    "khmer": "dtoo-dtuk-gork"
+  },
+  {
+    "english": "remind",
+    "khmer": "rom-luek"
+  },
+  {
+    "english": "rent",
+    "khmer": "juerl"
+  },
+  {
+    "english": "repeat",
+    "khmer": "taa-dtam"
+  },
+  {
+    "english": "report",
+    "khmer": "ro-bay-ga"
+  },
+  {
+    "english": "review",
+    "khmer": "rom-luek"
+  },
+  {
+    "english": "rice",
+    "khmer": "bay"
+  },
+  {
+    "english": "rice field",
+    "khmer": "srae"
+  },
+  {
+    "english": "right",
+    "khmer": "kang-sdam"
+  },
+  {
+    "english": "road",
+    "khmer": "plow"
+  },
+  {
+    "english": "rob",
+    "khmer": "plorn"
+  },
+  {
+    "english": "room",
+    "khmer": "bon-dtob"
+  },
+  {
+    "english": "roundabout",
+    "khmer": "rong-wong-mool"
+  },
+  {
+    "english": "safe",
+    "khmer": "mean-so-wat-te-peap"
+  },
+  {
+    "english": "salt",
+    "khmer": "om-bel"
+  },
+  {
+    "english": "salty",
+    "khmer": "brai"
+  },
+  {
+    "english": "saturday",
+    "khmer": "t'ngai sao"
+  },
+  {
+    "english": "say",
+    "khmer": "niyeay"
+  },
+  {
+    "english": "school",
+    "khmer": "sala-rean",
+    "variants": [
+      "sala"
+    ]
+  },
+  {
+    "english": "seafood",
+    "khmer": "groeung-samot"
+  },
+  {
+    "english": "sell",
+    "khmer": "loak"
+  },
+  {
+    "english": "send",
+    "khmer": "p'nyaur",
+    "variants": [
+      "p'joon"
+    ]
+  },
+  {
+    "english": "sentence",
+    "khmer": "bpro-yok"
+  },
+  {
+    "english": "seven",
+    "khmer": "bpram-bpee"
+  },
+  {
+    "english": "seventy",
+    "khmer": "jet-sub"
+  },
+  {
+    "english": "she",
+    "khmer": "neang"
+  },
+  {
+    "english": "shirt",
+    "khmer": "aow"
+  },
+  {
+    "english": "shoes",
+    "khmer": "sbaik-jerng"
+  },
+  {
+    "english": "shop",
+    "khmer": "hang"
+  },
+  {
+    "english": "short (height)",
+    "khmer": "dteap",
+    "khmerScript": "ទាប"
+  },
+  {
+    "english": "short (length or time)",
+    "khmer": "kley",
+    "khmerScript": "ខ្លី"
+  },
+  {
+    "english": "should",
+    "khmer": "gou",
+    "variants": [
+      "gou-dtae"
+    ]
+  },
+  {
+    "english": "shower",
+    "khmer": "muj-dtuk"
+  },
+  {
+    "english": "shrimp",
+    "khmer": "bong-gea"
+  },
+  {
+    "english": "sibling",
+    "khmer": "bong-p'oun"
+  },
+  {
+    "english": "sick",
+    "khmer": "cheu"
+  },
+  {
+    "english": "sing",
+    "khmer": "jreang"
+  },
+  {
+    "english": "sister (older)",
+    "khmer": "bong-srey",
+    "khmerScript": "បងស្រី"
+  },
+  {
+    "english": "sister (younger)",
+    "khmer": "p'oun-srey",
+    "khmerScript": "ប្អូនស្រី"
+  },
+  {
+    "english": "sister-in-law (older)",
+    "khmer": "bong-srey-tlai"
+  },
+  {
+    "english": "sister-in-law (younger)",
+    "khmer": "p'oun-srey-tlai"
+  },
+  {
+    "english": "sit",
+    "khmer": "ong-gouy"
+  },
+  {
+    "english": "situation",
+    "khmer": "satan-na-peap"
+  },
+  {
+    "english": "six",
+    "khmer": "bpram-mouy"
+  },
+  {
+    "english": "sixty",
+    "khmer": "hok-sub"
+  },
+  {
+    "english": "size (dimension)",
+    "khmer": "tom-hom",
+    "khmerScript": "ទំហំ"
+  },
+  {
+    "english": "size (number)",
+    "khmer": "layk",
+    "khmerScript": "លេខ"
+  },
+  {
+    "english": "sleep",
+    "khmer": "gayng"
+  },
+  {
+    "english": "slice",
+    "khmer": "han"
+  },
+  {
+    "english": "slow",
+    "khmer": "yert"
+  },
+  {
+    "english": "small",
+    "khmer": "dtooj"
+  },
+  {
+    "english": "so",
+    "khmer": "anh-jing",
+    "variants": [
+      "doj-ch'neh"
+    ]
+  },
+  {
+    "english": "soft",
+    "khmer": "dton"
+  },
+  {
+    "english": "solve",
+    "khmer": "doh-sray"
+  },
+  {
+    "english": "some",
+    "khmer": "klah"
+  },
+  {
+    "english": "something",
+    "khmer": "ey-klah"
+  },
+  {
+    "english": "sometime",
+    "khmer": "bpayl-klah",
+    "variants": [
+      "juern-gal"
+    ]
+  },
+  {
+    "english": "son",
+    "khmer": "gon-bproh"
+  },
+  {
+    "english": "son-in-law",
+    "khmer": "gon-bro-sa-bproh"
+  },
+  {
+    "english": "sour",
+    "khmer": "joo"
+  },
+  {
+    "english": "soy sauce",
+    "khmer": "dtuk-see-eew"
+  },
+  {
+    "english": "speak",
+    "khmer": "niyeay"
+  },
+  {
+    "english": "spend",
+    "khmer": "jom-nay"
+  },
+  {
+    "english": "spice",
+    "khmer": "groeung dteh"
+  },
+  {
+    "english": "spicy",
+    "khmer": "hel"
+  },
+  {
+    "english": "squid",
+    "khmer": "muk"
+  },
+  {
+    "english": "staff",
+    "khmer": "bok-ga-luk"
+  },
+  {
+    "english": "start",
+    "khmer": "jab-pdaurm"
+  },
+  {
+    "english": "stay",
+    "khmer": "snak-nau",
+    "variants": [
+      "nau"
+    ]
+  },
+  {
+    "english": "steal",
+    "khmer": "louj"
+  },
+  {
+    "english": "steam",
+    "khmer": "jom-hoy"
+  },
+  {
+    "english": "stir",
+    "khmer": "gow"
+  },
+  {
+    "english": "strong",
+    "khmer": "klang"
+  },
+  {
+    "english": "student",
+    "khmer": "suh"
+  },
+  {
+    "english": "study",
+    "khmer": "rean"
+  },
+  {
+    "english": "stumble",
+    "khmer": "rerh-ban"
+  },
+  {
+    "english": "sugar",
+    "khmer": "skaw"
+  },
+  {
+    "english": "sunday",
+    "khmer": "t'ngai ah-dtid"
+  },
+  {
+    "english": "sweet",
+    "khmer": "p'aem"
+  },
+  {
+    "english": "sweet and sour",
+    "khmer": "joo-aem"
+  },
+  {
+    "english": "table",
+    "khmer": "dtok"
+  },
+  {
+    "english": "tall",
+    "khmer": "kpooah"
+  },
+  {
+    "english": "taste",
+    "khmer": "roh-jeat"
+  },
+  {
+    "english": "teach",
+    "khmer": "bong-rean"
+  },
+  {
+    "english": "teacher",
+    "khmer": "groo-bong-rean"
+  },
+  {
+    "english": "team",
+    "khmer": "grom"
+  },
+  {
+    "english": "ten",
+    "khmer": "dob"
+  },
+  {
+    "english": "text (send a message)",
+    "khmer": "p'nyaur-saa",
+    "khmerScript": "ផ្ញើសារ"
+  },
+  {
+    "english": "thank",
+    "khmer": "orgun"
+  },
+  {
+    "english": "that",
+    "khmer": "nuh"
+  },
+  {
+    "english": "their",
+    "khmer": "roboh-bpouk-gay"
+  },
+  {
+    "english": "them",
+    "khmer": "bpouk-gay",
+    "variants": [
+      "gay"
+    ]
+  },
+  {
+    "english": "then",
+    "khmer": "bon-dtoab-mok"
+  },
+  {
+    "english": "there",
+    "khmer": "dtee-nuh"
+  },
+  {
+    "english": "therefore",
+    "khmer": "gom-nut"
+  },
+  {
+    "english": "they",
+    "khmer": "bpouk-gay",
+    "variants": [
+      "gay"
+    ]
+  },
+  {
+    "english": "thin",
+    "khmer": "skom"
+  },
+  {
+    "english": "think",
+    "khmer": "gut"
+  },
+  {
+    "english": "thirsty",
+    "khmer": "srayk-dtuk"
+  },
+  {
+    "english": "thirty",
+    "khmer": "sam-sub"
+  },
+  {
+    "english": "this",
+    "khmer": "nih"
+  },
+  {
+    "english": "though",
+    "khmer": "doj-ch'neh"
+  },
+  {
+    "english": "thousand",
+    "khmer": "mouy-bpoan"
+  },
+  {
+    "english": "three",
+    "khmer": "bey"
+  },
+  {
+    "english": "thursday",
+    "khmer": "t'ngai bpro-hoah"
+  },
+  {
+    "english": "time",
+    "khmer": "bpayl",
+    "khmerScript": "ពេល"
+  },
+  {
+    "english": "times (occurrences)",
+    "khmer": "dong",
+    "khmerScript": "ដង"
+  },
+  {
+    "english": "tired",
+    "khmer": "oh-gom-lang"
+  },
+  {
+    "english": "to",
+    "khmer": "dtow"
+  },
+  {
+    "english": "to know (about things)",
+    "khmer": "dung"
+  },
+  {
+    "english": "to know (how to do something)",
+    "khmer": "jeh"
+  },
+  {
+    "english": "to know (people/places)",
+    "khmer": "skoal"
+  },
+  {
+    "english": "today",
+    "khmer": "t'ngai-nih"
+  },
+  {
+    "english": "tomato",
+    "khmer": "bpayng-bpoh"
+  },
+  {
+    "english": "tomorrow",
+    "khmer": "sa-aik"
+  },
+  {
+    "english": "too + adj",
+    "khmer": "bpayk"
+  },
+  {
+    "english": "town",
+    "khmer": "dtee-grong"
+  },
+  {
+    "english": "translate",
+    "khmer": "bok-brae"
+  },
+  {
+    "english": "tuesday",
+    "khmer": "t'ngai ong-gea"
+  },
+  {
+    "english": "twenty",
+    "khmer": "m'pey"
+  },
+  {
+    "english": "two",
+    "khmer": "bpee"
+  },
+  {
+    "english": "ugly",
+    "khmer": "ah-grok"
+  },
+  {
+    "english": "uncle (parent's older sibling)",
+    "khmer": "om-bproh",
+    "khmerScript": "អុំប្រុស"
+  },
+  {
+    "english": "uncle (parent's younger sibling)",
+    "khmer": "bpoo",
+    "khmerScript": "ពូ"
+  },
+  {
+    "english": "under",
+    "khmer": "graom"
+  },
+  {
+    "english": "understand",
+    "khmer": "yol"
+  },
+  {
+    "english": "until",
+    "khmer": "rohot-dol"
+  },
+  {
+    "english": "us",
+    "khmer": "bpouk-yerng",
+    "variants": [
+      "yerng"
+    ]
+  },
+  {
+    "english": "used to",
+    "khmer": "tloab"
+  },
+  {
+    "english": "usually",
+    "khmer": "jea-tomada"
+  },
+  {
+    "english": "vegetable",
+    "khmer": "bon-lae"
+  },
+  {
+    "english": "very",
+    "khmer": "nah"
+  },
+  {
+    "english": "village",
+    "khmer": "poom"
+  },
+  {
+    "english": "village chief",
+    "khmer": "may-poom"
+  },
+  {
+    "english": "visit (come to)",
+    "khmer": "mok-layng",
+    "khmerScript": "មកលេង"
+  },
+  {
+    "english": "visit (go to)",
+    "khmer": "dtow-layng",
+    "khmerScript": "ទៅលេង"
+  },
+  {
+    "english": "volunteer",
+    "khmer": "neak-smak-jet",
+    "variants": [
+      "smak-jet"
+    ]
+  },
+  {
+    "english": "wake up",
+    "khmer": "p'nyeak-bpee-gayng"
+  },
+  {
+    "english": "wallet",
+    "khmer": "ga-bob-luy"
+  },
+  {
+    "english": "want",
+    "khmer": "jong",
+    "variants": [
+      "jong-ban",
+      "jong-aowee"
+    ]
+  },
+  {
+    "english": "wash",
+    "khmer": "leang"
+  },
+  {
+    "english": "watch (noun)",
+    "khmer": "nea-le-ga"
+  },
+  {
+    "english": "watch (verb)",
+    "khmer": "merl"
+  },
+  {
+    "english": "water",
+    "khmer": "dtuk"
+  },
+  {
+    "english": "we",
+    "khmer": "bpouk-yerng",
+    "variants": [
+      "yerng"
+    ]
+  },
+  {
+    "english": "weak",
+    "khmer": "ksaoy"
+  },
+  {
+    "english": "wednesday",
+    "khmer": "t'ngai bput"
+  },
+  {
+    "english": "week",
+    "khmer": "ah-dtid",
+    "variants": [
+      "sab-bpa-da"
+    ]
+  },
+  {
+    "english": "what",
+    "khmer": "ey",
+    "khmerScript": "អី",
+    "variants": [
+      "avey"
+    ]
+  },
+  {
+    "english": "when",
+    "khmer": "bpayl-na",
+    "khmerScript": "ពេលណា"
+  },
+  {
+    "english": "where",
+    "khmer": "ei-na",
+    "khmerScript": "ឯណា",
+    "variants": [
+      "nau-ei-na"
+    ]
+  },
+  {
+    "english": "who",
+    "khmer": "nak-na",
+    "khmerScript": "អ្នកណា"
+  },
+  {
+    "english": "why",
+    "khmer": "het-avey",
+    "khmerScript": "ហេតុអ្វី",
+    "variants": [
+      "mech"
+    ]
+  },
+  {
+    "english": "will",
+    "khmer": "nung",
+    "khmerScript": "នឹង"
+  },
+  {
+    "english": "with",
+    "khmer": "jea-moy",
+    "khmerScript": "ជាមួយ"
+  },
+  {
+    "english": "work(n)",
+    "khmer": "gej-ga",
+    "khmerScript": "កិច្ចការ"
+  },
+  {
+    "english": "work(v)",
+    "khmer": "twer-ga",
+    "khmerScript": "ធ្វើការ"
+  },
+  {
+    "english": "yes (female speaker)",
+    "khmer": "jaa",
+    "khmerScript": "ចាស"
+  },
+  {
+    "english": "yes (male speaker)",
+    "khmer": "baat",
+    "khmerScript": "បាទ"
+  },
+  {
+    "english": "yesterday",
+    "khmer": "m'serl-menh",
+    "khmerScript": "ម្សិលមិញ"
+  },
+  {
+    "english": "you",
+    "khmer": "neak",
+    "khmerScript": "អ្នក"
+  },
+  {
+    "english": "your",
+    "khmer": "roboh-neak",
+    "variants": [
+      "neak"
+    ]
+  }
+]

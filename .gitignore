@@ -1,0 +1,6 @@
+# local Claude Code settings
+.claude/settings.local.json
+
+# backups / OS cruft
+*.bak
+.DS_Store
